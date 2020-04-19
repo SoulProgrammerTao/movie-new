@@ -1,0 +1,61 @@
+/* pages/pay/main.wxss */
+.pay {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: #414640;
+  padding: 0 20rpx;
+}
+.pay .date {
+  font-size: 40rpx;
+  color: #fff;
+  text-align: center;
+  margin-top: 30rpx;
+}
+.pay .tip {
+  color: #fff;
+  text-align: center;
+  margin-top: 40rpx;
+}
+.pay .container {
+  margin-top: 60rpx;
+  background-color: #fff;
+  padding: 60rpx;
+}
+.pay .header {
+  display: flex;
+  border-bottom: 1rpx solid #666;
+  padding-bottom: 20rpx;
+}
+.pay .left {
+  flex: 1;
+  margin-right: 30rpx;
+}
+.pay .pic {
+  width: 152rpx;
+  height: 214rpx;
+}
+.pay .title {
+  font-size: 40rpx;
+  font-weight: bold;
+  margin-bottom: 20rpx;
+}
+.pay .dt,.ad,.wz {
+  font-size: 28rpx;
+  color: #666;
+}
+.pay .footer {
+  padding-top: 40rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.pay .qp {
+  font-size: 36rpx;
+  font-weight: bold;
+}
+.pay .code {
+  width: 500rpx;
+  height: 500rpx;
+  margin: 40rpx auto;
+}

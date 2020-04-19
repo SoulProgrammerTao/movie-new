@@ -1,0 +1,20 @@
+<!--pages/pay/main.wxml-->
+ <view class="pay">
+  <view class="date">1天后开场</view>
+  <view class="tip">凭二维码取票更方便，取票码将以短信形式发送</view>
+  <view class="container">
+    <view class="header">
+      <view class="left">
+        <view class="title">{{orderInfo.title}}</view>
+        <view class="dt">明天 12-19 15:45 ~ 17:20(国语3D)</view>
+        <view class="ad">天堂影院皇后大道店 8号厅</view>
+        <view class="wz">5排3座</view>
+      </view>
+      <image class="pic" src="{{orderInfo.images.small}}" alt=""></image>
+    </view>
+    <view class="footer">
+      <view class="qp">取票二维码</view>
+      <image class="code" src="../../static/images/code.png"></image>
+    </view>
+  </view>
+</view>

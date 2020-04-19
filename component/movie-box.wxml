@@ -1,0 +1,16 @@
+<!--component/movie-box.wxml-->
+<view class="hot-item">
+  <image src="{{item.images.small}}" ></image>
+  <view class="hot-detl">
+    <view class="hot-name">{{item.title}}</view>
+    <view class="hot-yy">主演：
+      <text wx:for="{{item.casts}}" wx:for-item="item1" wx:key="item1">{{item1.name}}</text>
+    </view>
+    <text class="hot-yy">
+      <text wx:for="{{item.genres}}" wx:for-item="item2" wx:key="item2">{{item2}}</text>
+    </text>
+    <text class="hot-yy">{{item.pubdates[0]}}</text>
+  </view>
+  <!-- <view class="buy" data-item="{{item}}" bindtap="goDetail">想看</view> -->
+  <slot></slot>
+</view>

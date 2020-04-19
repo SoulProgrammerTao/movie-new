@@ -1,0 +1,38 @@
+/* pages/search/main.wxss */
+.sh-input {
+  height: 100rpx;
+  border-bottom: 2rpx solid #e2e2e2;
+  border-top: 2rpx solid #e2e2e2;
+  display: flex;
+  align-items: center;
+}
+.sh-input > input {
+  flex: 1;
+  height: 60rpx;
+  padding-left: 20rpx;
+}
+.sh-input > .btn {
+  width: 100rpx;
+  height: 100rpx;
+  border-left: 2rpx solid #e2e2e2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sh-input > .btn > image {
+  width: 60rpx;
+  height: 60rpx;
+}
+
+.hot-list {
+  padding: 0 20rpx;
+}
+.buy {
+  text-align: center;
+  width: 140rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  border: 2rpx solid #e2e2e2;
+  background-color: #fff;
+  margin-left: 20rpx;
+}

@@ -1,0 +1,6 @@
+<!-- 封装的组件 -->
+<view class="hot-list">
+  <m-b wx:for="{{colList}}" wx:key="index" item="{{item}}">
+    <view class="buy" data-item="{{item}}" data-index="{{index}}" bindtap="buy">购票</view>
+  </m-b>
+</view>

@@ -1,0 +1,6 @@
+<!--pages/order/main.wxml-->
+<view class="hot-list">
+  <m-b wx:for="{{orderList}}" wx:key="index" item="{{item}}">
+    <view class="buy" data-index="{{index}}" bindtap="handleDel">删除</view>
+  </m-b>
+</view>

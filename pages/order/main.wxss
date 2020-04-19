@@ -1,0 +1,17 @@
+/* pages/order/main.wxss */
+
+.mgb {
+  margin-bottom: 20rpx;
+}
+.hot-list {
+  padding: 0 20rpx;
+}
+.buy {
+  text-align: center;
+  width: 140rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  border: 2rpx solid #e2e2e2;
+  background-color: #fff;
+  margin-left: 20rpx;
+}

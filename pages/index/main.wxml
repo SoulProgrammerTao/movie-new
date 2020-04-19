@@ -1,0 +1,24 @@
+<view class="home">
+  <view class="coming-mv">
+    <view class="cm-title">即将上映</view>
+    <view class="cm-box">
+      <view class="cm-list">
+        <view class="cm-item" wx:for="{{comList}}" wx:key="index">
+          <image src="{{item.images.small}}"></image>
+          <view class="cm-name">{{item.title}}</view>
+          <view class="cm-yy">主演：{{item.casts[0].name}}</view>
+          <view class="cm-yy">{{item.mainland_pubdate}}</view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="hot-mv">
+    <view class="hot-title">正在热映</view>
+    <view class="hot-list">
+      <!-- 封装的组件 -->
+      <m-b wx:for="{{hotList}}" wx:key="index" item="{{item}}">
+        <view class="buy" data-item="{{item}}" bindtap="goDetail">想看</view>
+      </m-b>
+    </view>
+  </view>
+</view>

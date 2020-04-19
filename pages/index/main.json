@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "m-b": "/component/movie-box"
+  }
+}

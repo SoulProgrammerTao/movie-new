@@ -1,0 +1,27 @@
+<!--pages/detail/main.wxml-->
+  <view class="detail">
+    <view class="top">
+      <image class="sl-img" src="{{detail.images.small}}" alt=""></image>
+      <view class="right">
+        <view>{{detail.title}}</view>
+        <view>主演：
+          <text wx:for="{{detail.casts}}" wx:key="index1">{{item.name}}</text>
+        </view>
+        <view>类型：
+          <text wx:for="{{detail.genres}}" wx:key="index1">{{item}}</text>
+        </view>
+        <view>时长：
+          <text wx:for="{{detail.durations}}" wx:key="index1">{{item}}</text>
+        </view>
+      </view>
+    </view>
+    <view class="bottom">
+      <view class="desi">电影简介</view>
+      <view class="lako">亦称电影故事。电影文学剧本创作前的概要描述。电影剧作者在创作电影文学剧本之前，先选用自己掌握的生活素材中最能确切表现人物性格和展示主题的一系列事件，构造成一个有简略剧情内容的故事梗概，作为进一步编写电影文学剧本的依据。它的基本内容包括主要人物、时间地点、情节发展和结局等。电影制片厂在物色剧本的阶段,往往先要剧作者交出一个故事梗概,作为评断和取舍的依据。</view>
+    </view>
+    <view class="bott-btn">
+      <image wx:if="{{isWant}}" src="../../static/images/xiangkan2.png" alt="" bindtap="collection"></image>
+      <image wx:else src="../../static/images/xiangkan.png" alt="" bindtap="collection"></image>
+      <view bindtap="buy">立即购票</view>
+    </view>
+  </view>

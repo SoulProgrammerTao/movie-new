@@ -1,0 +1,15 @@
+<!--pages/search/main.wxml-->
+<view class="search">
+  <view class="sh-input">
+    <input type="text" model:value="{{q}}" bindchange="setq" placeholder="请输入您要搜索的电影"/>
+    <view class="btn" bindtap="getMvList">
+      <image src="../../static/images/sousuo.png"></image>
+    </view>
+  </view>
+  <view class="hot-list">
+    <!-- 封装的组件 -->
+    <m-b wx:for="{{mvList}}" wx:key="index" item="{{item}}">
+      <view class="buy" data-item="{{item}}" bindtap="goDetail">想看</view>
+    </m-b>
+  </view>
+</view>

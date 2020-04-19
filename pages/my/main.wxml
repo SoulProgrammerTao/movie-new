@@ -1,0 +1,27 @@
+<!--pages/my/main.wxml-->
+<view class="my">
+    <view class="top">
+      <view class="itme" bindtap="goOrder">
+        <view>我的订单</view>
+        <image src="../../static/images/left.png" alt=""></image>
+      </view>
+      <view class="itme" bindtap="goPay">
+        <view>优惠券/支付</view>
+        <image src="../../static/images/left.png" alt=""></image>
+      </view>
+      <view class="itme">
+        <view>影院会员卡</view>
+        <image src="../../static/images/left.png" alt=""></image>
+      </view>
+    </view>
+    <view class="bottom">
+      <view class="itme" bindtap="goCollection">
+        <view>收藏的电影</view>
+        <image src="../../static/images/left.png" alt=""></image>
+      </view>
+      <view class="itme">
+        <view>看过的电影</view>
+        <image src="../../static/images/left.png" alt=""></image>
+      </view>
+    </view>
+  </view>
